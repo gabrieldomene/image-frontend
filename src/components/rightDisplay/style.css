@@ -1,0 +1,13 @@
+.container-display {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr;
+
+}
+
+.container-display #img-preview {
+  width: 75%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  margin-top: 5%;
+}

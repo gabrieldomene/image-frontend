@@ -1,0 +1,57 @@
+.container-data {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template: 9fr 1fr / 1fr;
+  grid-template-areas: 
+  "list-databases"
+  "action-database";
+  background-color: #31364f;
+  color: #d1ad58;
+}
+
+.container-data .list-databases {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #31364f;
+  grid-area: "list-databases";
+}
+
+.container-data .list-databases p{
+  margin: 0;
+  gap: 20px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
+.container-data .list-databases p:hover {
+  transform: translate(5px, 0px);
+}
+
+.container-data .action-database .btn-create {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #31364f;
+  grid-area: "action-database";
+  cursor: pointer;
+  transition: 0.15s;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
+.container-data .action-database .btn-create:hover {
+  background-color: #3a4057;
+  font-weight: 400;
+  height: 100%;
+}
